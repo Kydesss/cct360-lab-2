@@ -92,6 +92,6 @@ body {
     transition: 0.3s;
 }
 
-.nav-link:disabled .disabled:disabled {
+.nav-link.disabled, .nav-link:disabled {
     color: var(--bs-red);
 }
