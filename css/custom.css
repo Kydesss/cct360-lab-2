@@ -2,3 +2,21 @@
     max-height: 400px;
     overflow: hidden;
 }
+
+.carousel-control-prev-icon, 
+.carousel-control-next-icon{
+    width: 8rem;
+    height: 8rem;
+}
+
+.carousel-caption p {
+    font-weight: 700;
+}
+
+.carousel-caption h3 {
+    font-weight: 700;
+}
+
+.carousel-item img {
+    width: 100%;
+}
