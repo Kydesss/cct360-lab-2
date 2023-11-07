@@ -9,6 +9,7 @@
         <script src="js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
+        <!-- Spotlight image -->
         <div class="spotlight">
             <img
                 src="images/dark-mountain.jpg"
@@ -16,9 +17,79 @@
                 class="img-fluid"
             />
         </div>
+        <!-- Spotlight title text -->
         <div class="container-fluid p-5 bg-dark text-white text-center">
             <h1>My First Bootstrap Page</h1>
             <p>Resize this responsive page to see the effect!</p>
+        </div>
+        <!-- Columns of text and images -->
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <img
+                        src="images/feature-1.jpg"
+                        alt="feature-1"
+                        class="img-thumbnail"
+                    />
+                    <h3>Column 1</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit...
+                    </p>
+                    <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris...
+                    </p>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <img
+                        src="images/feature-2.jpg"
+                        alt="feature-2"
+                        class="img-thumbnail"
+                    />
+                    <h3>Column 2</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit...
+                    </p>
+                    <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris...
+                    </p>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <img
+                        src="images/feature-1.jpg"
+                        alt="feature-1"
+                        class="img-thumbnail"
+                    />
+                    <h3>Column 3</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit...
+                    </p>
+                    <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris...
+                    </p>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <img
+                        src="images/feature-2.jpg"
+                        alt="feature-2"
+                        class="img-thumbnail"
+                    />
+                    <h3>Column 4</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit...
+                    </p>
+                    <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris...
+                    </p>
+                </div>
+            </div>
         </div>
         <!-- Carousel -->
         <div
@@ -99,71 +170,68 @@
                 <span class="carousel-control-next-icon"></span>
             </button>
         </div>
-        <div class="container mt-5">
+        <!-- 
+            Code from w3schools. 
+            https://www.w3schools.com/bootstrap5/bootstrap_cards.php 
+        -->
+        <!-- Row of cards -->
+        <div class="container my-5">
             <div class="row">
-                <div class="col-lg-3 col-sm-6 col-12">
-                    <img
-                        src="images/feature-1.jpg"
-                        alt="feature-1"
-                        class="img-thumbnail"
-                    />
-                    <h3>Column 1</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit...
-                    </p>
-                    <p>
-                        Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris...
-                    </p>
+                <div class="col-lg-3 col-12">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="https://www.w3schools.com/bootstrap5/img_avatar1.png"
+                            alt="Card image"
+                        />
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Some example text.</p>
+                            <span class="badge bg-secondary">New</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-12">
-                    <img
-                        src="images/feature-2.jpg"
-                        alt="feature-2"
-                        class="img-thumbnail"
-                    />
-                    <h3>Column 2</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit...
-                    </p>
-                    <p>
-                        Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris...
-                    </p>
+                <div class="col-lg-3 col-12">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="https://www.w3schools.com/bootstrap5/img_avatar1.png"
+                            alt="Card image"
+                        />
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Some example text.</p>
+                            <span class="badge bg-secondary">New</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-12">
-                    <img
-                        src="images/feature-1.jpg"
-                        alt="feature-1"
-                        class="img-thumbnail"
-                    />
-                    <h3>Column 3</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit...
-                    </p>
-                    <p>
-                        Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris...
-                    </p>
+                <div class="col-lg-3 col-12">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="https://www.w3schools.com/bootstrap5/img_avatar1.png"
+                            alt="Card image"
+                        />
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Some example text.</p>
+                            <span class="badge bg-secondary">New</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 col-12">
-                    <img
-                        src="images/feature-2.jpg"
-                        alt="feature-2"
-                        class="img-thumbnail"
-                    />
-                    <h3>Column 4</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit...
-                    </p>
-                    <p>
-                        Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris...
-                    </p>
+                <div class="col-lg-3 col-12">
+                    <div class="card">
+                        <img
+                            class="card-img-top"
+                            src="https://www.w3schools.com/bootstrap5/img_avatar1.png"
+                            alt="Card image"
+                        />
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Some example text.</p>
+                            <span class="badge bg-secondary">New</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -220,7 +288,7 @@
                                 rows="10"
                                 class="form-control-sm"
                             ></textarea>
-                            <br>
+                            <br />
                             <button type="button" class="btn btn-primary">
                                 Submit
                             </button>
