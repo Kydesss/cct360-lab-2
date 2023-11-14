@@ -9,6 +9,73 @@
         <script src="js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mynavbar"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)"
+                                >Link</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)"
+                                >Link</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)"
+                                >Link</a
+                            >
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                >Dropdown</a
+                            >
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">Link</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Another link</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >A third link</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input
+                            class="form-control me-2"
+                            type="text"
+                            placeholder="Search"
+                        />
+                        <button class="btn btn-primary" type="button">
+                            Search
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
         <!-- Spotlight image -->
         <div class="spotlight">
             <img
@@ -170,9 +237,9 @@
                 <span class="carousel-control-next-icon"></span>
             </button>
         </div>
-        <!-- 
-            Code from w3schools. 
-            https://www.w3schools.com/bootstrap5/bootstrap_cards.php 
+        <!--
+            Code from w3schools.
+            https://www.w3schools.com/bootstrap5/bootstrap_cards.php
         -->
         <!-- Row of cards -->
         <div class="container my-5 mb-5 featured-people">
@@ -239,6 +306,167 @@
                 </div>
             </div>
         </div>
+        <!-- Custom Bootstrap components from w3schools -->
+
+        <!-- Progress bar -->
+        <div class="container mt-5 mb-5">
+            <h2>Progress Bar With Label</h2>
+            <div class="progress">
+                <div class="progress-bar" style="width: 70%">70%</div>
+            </div>
+        </div>
+        <!-- Spinner buttons -->
+        <div class="container mt-5 mb-5">
+            <h2>Spinner Buttons</h2>
+            <button class="btn btn-primary" disabled>
+                <span class="spinner-border spinner-border-sm"></span>
+                Payment being processed. Please wait.
+            </button>
+        </div>
+        <!-- Breadcrumbs -->
+        <div class="container mt-5 mb-5">
+            <h2>Breadcrumbs</h2>
+            <p>
+                The .breadcrumb class indicates the current page's location
+                within a navigational hierarchy:
+            </p>
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Photos</a></li>
+                <li class="breadcrumb-item"><a href="#">Summer 2017</a></li>
+                <li class="breadcrumb-item"><a href="#">Italy</a></li>
+                <li class="breadcrumb-item active">Rome</li>
+            </ul>
+        </div>
+        <!-- Dropdowns -->
+        <div class="container mt-5 mb-5">
+            <h2>Dropdowns</h2>
+            <div class="dropdown">
+                <button
+                    type="button"
+                    class="btn btn-primary dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                >
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><h5 class="dropdown-header">Dropdown header 1</h5></li>
+                    <li><hr class="dropdown-divider"></hr></li>
+                    <li><a class="dropdown-item" href="#">Link 1</a></li>
+                    <li><a class="dropdown-item" href="#">Link 2</a></li>
+                    <li><a class="dropdown-item" href="#">Link 3</a></li>
+                    <li><hr class="dropdown-divider"></hr></li>
+                    <li><h5 class="dropdown-header">Dropdown header 2</h5></li>
+                    <li><hr class="dropdown-divider"></hr></li>
+                    <li><a class="dropdown-item" href="#">Another link</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- The Modal container-->
+        <div class="container mt-5 mb-5">
+            <h3>Fading Modal Example</h3>
+            <p>Click on the button to open the modal.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                Open modal
+            </button>
+        </div>
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                <h4 class="modal-title">Modal Heading</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                Modal body..
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Tooltip -->
+        <div class="container mt-5 mb-5">
+            <h3>Tooltip Example</h3>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="Hooray!">
+                Hover over me!
+            </button>
+        </div>
+        <!-- Dismissible popover -->
+        <div class="container mt-5 mt-5">
+            <h3>Dismissible Popover</h3>
+            <button type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-trigger="focus" title="Popover Header" data-bs-content="Some content inside the popover">
+                Toggle popover
+            </button>
+        </div>
+        <!-- Toast -->
+        <div class="container mt-5 mb-5">
+            <h3>Toast Example</h3>
+            <p>In this example, we use a button to show the toast message.</p>
+            <button type="button" class="btn btn-primary" id="toastbtn">Show Toast</button>
+            <div class="toast">
+                <div class="toast-header">
+                <strong class="me-auto">Toast Header</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                </div>
+                <div class="toast-body">
+                <p>Some text inside the toast body</p>
+                </div>
+            </div>
+        </div>
+        <!-- Scrollspy example -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section1">Section 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section2">Section 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">Section 3</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+            <h1>Section 1</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        </div>
+        <div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
+            <h1>Section 2</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        </div>
+        <div id="section3" class="container-fluid bg-secondary text-white" style="padding:100px 20px;">
+            <h1>Section 3</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        </div>
+        <!-- Offcanvas example -->
+        <div class="offcanvas offcanvas-end" id="demo">
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title">Heading</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <p>Some text lorem ipsum.</p>
+                <p>Some text lorem ipsum.</p>
+                <p>Some text lorem ipsum.</p>
+                <button class="btn btn-secondary" type="button">A Button</button>
+            </div>
+        </div>
+        <div class="container-fluid mt-5 mb-5">
+            <h3>Right Offcanvas</h3>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+            Toggle Right Offcanvas
+            </button>
+        </div>
+        <!-- Footer -->
         <div class="container-fluid p-5 bg-dark mt-5 text-white">
             <div class="container">
                 <div class="row">
@@ -315,5 +543,6 @@
                 </div>
             </div>
         </div>
+        <script src="js/custom.js"></script>
     </body>
 </html>
