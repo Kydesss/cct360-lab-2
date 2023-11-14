@@ -365,42 +365,67 @@
         <div class="container mt-5 mb-5">
             <h3>Fading Modal Example</h3>
             <p>Click on the button to open the modal.</p>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+            <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#myModal"
+            >
                 Open modal
             </button>
         </div>
         <!-- The Modal -->
         <div class="modal fade" id="myModal">
             <div class="modal-dialog">
-            <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                <h4 class="modal-title">Modal Heading</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                        ></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">Modal body..</div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-danger"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                    </div>
                 </div>
-                <!-- Modal body -->
-                <div class="modal-body">
-                Modal body..
-                </div>
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
             </div>
         </div>
         <!-- Tooltip -->
         <div class="container mt-5 mb-5">
             <h3>Tooltip Example</h3>
 
-            <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="Hooray!">
+            <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="tooltip"
+                title="Hooray!"
+            >
                 Hover over me!
             </button>
         </div>
         <!-- Dismissible popover -->
         <div class="container mt-5 mt-5">
             <h3>Dismissible Popover</h3>
-            <button type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-trigger="focus" title="Popover Header" data-bs-content="Some content inside the popover">
+            <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="popover"
+                data-bs-trigger="focus"
+                title="Popover Header"
+                data-bs-content="Some content inside the popover"
+            >
                 Toggle popover
             </button>
         </div>
@@ -408,14 +433,20 @@
         <div class="container mt-5 mb-5">
             <h3>Toast Example</h3>
             <p>In this example, we use a button to show the toast message.</p>
-            <button type="button" class="btn btn-primary" id="toastbtn">Show Toast</button>
+            <button type="button" class="btn btn-primary" id="toastbtn">
+                Show Toast
+            </button>
             <div class="toast">
                 <div class="toast-header">
-                <strong class="me-auto">Toast Header</strong>
-                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                    <strong class="me-auto">Toast Header</strong>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="toast"
+                    ></button>
                 </div>
                 <div class="toast-body">
-                <p>Some text inside the toast body</p>
+                    <p>Some text inside the toast body</p>
                 </div>
             </div>
         </div>
@@ -435,35 +466,73 @@
                 </ul>
             </div>
         </nav>
-        <div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
-            <h1>Section 1</h1>
-            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-        </div>
-        <div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
-            <h1>Section 2</h1>
-            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-        </div>
-        <div id="section3" class="container-fluid bg-secondary text-white" style="padding:100px 20px;">
-            <h1>Section 3</h1>
-            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        <div>
+            <div
+                id="section1"
+                class="container-fluid bg-success text-white"
+                style="padding: 100px 20px"
+            >
+                <h1>Section 1</h1>
+                <p>
+                    Try to scroll this section and look at the navigation bar while
+                    scrolling! Try to scroll this section and look at the navigation
+                    bar while scrolling!
+                </p>
+            </div>
+            <div
+                id="section2"
+                class="container-fluid bg-warning"
+                style="padding: 100px 20px"
+            >
+                <h1>Section 2</h1>
+                <p>
+                    Try to scroll this section and look at the navigation bar while
+                    scrolling! Try to scroll this section and look at the navigation
+                    bar while scrolling!
+                </p>
+            </div>
+            <div
+                id="section3"
+                class="container-fluid bg-secondary text-white"
+                style="padding: 100px 20px"
+            >
+                <h1>Section 3</h1>
+                <p>
+                    Try to scroll this section and look at the navigation bar while
+                    scrolling! Try to scroll this section and look at the navigation
+                    bar while scrolling!
+                </p>
+            </div>
         </div>
         <!-- Offcanvas example -->
         <div class="offcanvas offcanvas-end" id="demo">
             <div class="offcanvas-header">
                 <h1 class="offcanvas-title">Heading</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                ></button>
             </div>
             <div class="offcanvas-body">
                 <p>Some text lorem ipsum.</p>
                 <p>Some text lorem ipsum.</p>
                 <p>Some text lorem ipsum.</p>
-                <button class="btn btn-secondary" type="button">A Button</button>
+                <button class="btn btn-secondary" type="button">
+                    A Button
+                </button>
             </div>
         </div>
+        <!-- Offcanvas container -->
         <div class="container-fluid mt-5 mb-5">
             <h3>Right Offcanvas</h3>
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
-            Toggle Right Offcanvas
+            <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#demo"
+            >
+                Toggle Right Offcanvas
             </button>
         </div>
         <!-- Footer -->
